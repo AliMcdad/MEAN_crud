@@ -3,7 +3,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 
 //local imports
-const connectDB = require('./db');
+const connectDB = require('./db').default;
 const employeeRoutes = require('./controllers/employee.contoller')
 const { errorHandler } = require('./middlewares')
 
